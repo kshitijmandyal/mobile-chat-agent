@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "brand": "Samsung",
+    "model": "Galaxy M14",
+    "price": 13999,
+    "camera": "50MP",
+    "battery": "6000mAh",
+    "charging": "25W Fast Charging",
+    "os": "Android",
+    "screen": "6.6 inch"
+  },
+  {
+    "id": 2,
+    "brand": "OnePlus",
+    "model": "Nord CE 3 Lite",
+    "price": 19999,
+    "camera": "108MP",
+    "battery": "5000mAh",
+    "charging": "67W Fast Charging",
+    "os": "Android",
+    "screen": "6.72 inch"
+  },
+  {
+    "id": 3,
+    "brand": "Apple",
+    "model": "iPhone 13",
+    "price": 59999,
+    "camera": "12MP Dual",
+    "battery": "3240mAh",
+    "charging": "20W Fast Charging",
+    "os": "iOS",
+    "screen": "6.1 inch"
+  }
+]
