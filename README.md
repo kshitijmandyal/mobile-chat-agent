@@ -2,6 +2,15 @@
 
 An AI-powered mobile shopping assistant that helps users discover and compare phones using Google's Gemini API and a comprehensive dataset of 900+ phones from 22+ brands.
 
+## 🌐 Live Demo
+🔗 **[https://smartphone-chat-agent.vercel.app/](https://smartphone-chat-agent.vercel.app/)**
+
+Try it now! Ask questions like:
+- "Show me latest 2025 phones"
+- "Budget under ₹20k"
+- "Best cameras other than iPhone"
+- "Lightweight phones"
+
 ## 🚀 Features
 - 🤖 Natural language understanding with Gemini AI
 - 🔍 Smart phone recommendations based on budget, brand, and features
