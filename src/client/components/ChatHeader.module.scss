@@ -1,0 +1,35 @@
+@use '../styles/abstracts' as *;
+
+.header {
+  @include glass($glass-fill, 60px);
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+  padding: $space-4 $space-5;
+  border-top: none;
+  border-radius: 0 0 $radius-lg $radius-lg;
+
+  @include below($breakpoint-sm) {
+    padding: $space-3 $space-4;
+  }
+}
+
+.badge {
+  @include glass($glass-sage, 30px);
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: $color-ink-muted;
+}

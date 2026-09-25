@@ -1,0 +1,28 @@
+// Design tokens. theme.ts mirrors the colours MUI needs; keep the two in step.
+
+$color-ink: #1a1a1a;
+$color-ink-muted: rgba(0, 0, 0, 0.6);
+$color-sage: #abbaab;
+$color-price: #0f7a55;
+$color-error: #b3261e;
+
+$glass-fill: rgba(255, 255, 255, 0.28);
+$glass-fill-strong: rgba(255, 255, 255, 0.4);
+$glass-edge: rgba(255, 255, 255, 0.45);
+$glass-sage: rgba(171, 186, 171, 0.45);
+
+$radius-sm: 12px;
+$radius-md: 18px;
+$radius-lg: 24px;
+
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 24px;
+
+$font-stack: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+$content-max-width: 1100px;
+$breakpoint-sm: 640px;
+
+$ease-out: cubic-bezier(0.23, 1, 0.32, 1);

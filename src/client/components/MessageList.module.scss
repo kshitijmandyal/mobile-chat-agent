@@ -1,0 +1,21 @@
+@use '../styles/abstracts' as *;
+
+.list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  padding: $space-5 $space-4;
+
+  @include below($breakpoint-sm) {
+    padding: $space-4 $space-3;
+  }
+}
+
+.turn {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+}

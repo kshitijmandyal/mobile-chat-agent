@@ -1,0 +1,60 @@
+@use '../styles/abstracts' as *;
+
+.card {
+  @include glass($glass-fill, 50px);
+  @include lift-on-hover;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-4;
+  border-radius: $radius-lg;
+  min-width: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-1;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $space-2;
+}
+
+.price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: $color-price;
+  margin-right: $space-1;
+}
+
+.chip {
+  background: $glass-fill-strong;
+}
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.specs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: $space-2;
+
+  @include below($breakpoint-sm) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

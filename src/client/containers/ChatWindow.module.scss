@@ -1,0 +1,28 @@
+@use '../styles/abstracts' as *;
+
+.window {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, $content-max-width);
+  height: 100dvh;
+  margin: 0 auto;
+  padding: 0 $space-4;
+
+  @include below($breakpoint-sm) {
+    padding: 0 $space-2;
+  }
+}
+
+.footer {
+  @include glass($glass-fill, 60px);
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-4 $space-5 max($space-4, env(safe-area-inset-bottom));
+  border-bottom: none;
+  border-radius: $radius-lg $radius-lg 0 0;
+
+  @include below($breakpoint-sm) {
+    padding: $space-3 $space-3 max($space-3, env(safe-area-inset-bottom));
+  }
+}

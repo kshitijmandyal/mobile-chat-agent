@@ -1,0 +1,23 @@
+@use '../styles/abstracts' as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: start;
+  gap: $space-3;
+
+  @include below($breakpoint-sm) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+// Side by side so specs line up across the phones being compared.
+.compare {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, 1fr);
+  align-items: start;
+  gap: $space-3;
+  overflow-x: auto;
+  padding-bottom: $space-2;
+}

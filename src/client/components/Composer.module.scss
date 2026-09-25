@@ -1,0 +1,28 @@
+@use '../styles/abstracts' as *;
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+}
+
+.input {
+  @include glass($glass-fill-strong, 30px);
+  flex: 1;
+  min-width: 0;
+  padding: $space-3 $space-4;
+  border-radius: 22px;
+  font-size: 1rem;
+  outline: none;
+
+  &:focus-visible {
+    border-color: rgba(93, 122, 93, 0.7);
+  }
+}
+
+.send {
+  @include glass($glass-sage, 30px);
+  flex: none;
+  width: 48px;
+  height: 48px;
+}

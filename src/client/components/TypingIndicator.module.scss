@@ -1,0 +1,42 @@
+@use '../styles/abstracts' as *;
+
+.bubble {
+  @include glass;
+  align-self: flex-start;
+  display: flex;
+  gap: $space-1;
+  padding: $space-4;
+  border-radius: $radius-lg $radius-lg $radius-lg 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $color-sage;
+  animation: bounce 1.2s infinite ease-in-out;
+
+  &:nth-child(3) {
+    animation-delay: 0.15s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-6px);
+  }
+}

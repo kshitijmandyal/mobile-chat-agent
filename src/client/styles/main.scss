@@ -1,0 +1,5 @@
+// Global entry, imported once by the root layout. Abstracts only define tokens;
+// base resets and sets defaults; utilities come last so they win. Component
+// styles live in .module.scss files beside their components.
+@use 'base';
+@use 'utilities';

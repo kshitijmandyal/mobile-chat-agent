@@ -1,0 +1,38 @@
+@use '../styles/abstracts' as *;
+
+.tile {
+  @include glass($glass-fill-strong, 20px);
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+  padding: $space-2 $space-3;
+  border-radius: $radius-sm;
+  min-width: 0;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.value {
+  font-size: 0.85rem;
+  color: $color-ink-muted;
+  overflow-wrap: anywhere;
+}

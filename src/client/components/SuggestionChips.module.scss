@@ -1,0 +1,22 @@
+@use '../styles/abstracts' as *;
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $space-2;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include below($breakpoint-sm) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: $space-1;
+  }
+}
+
+.chip {
+  @include glass($glass-fill, 30px);
+}
