@@ -1,25 +1,40 @@
 {
   "name": "mobile-chat-agent",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
+  "engines": {
+    "node": ">=22 <25"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint:deps": "depcruise src --config .dependency-cruiser.cjs",
+    "try": "tsx scripts/try-chat.ts"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
-    "dotenv": "^17.2.3",
-    "next": "^14.2.33",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@anthropic-ai/sdk": "^0.128.0",
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.4.0",
+    "@mui/material": "^9.4.0",
+    "@mui/material-nextjs": "^9.4.0",
+    "@reduxjs/toolkit": "^2.12.0",
+    "next": "^16.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-redux": "^9.3.0",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
-    "@types/node": "24.7.2",
-    "@types/react": "19.2.2",
-    "autoprefixer": "10.4.14",
-    "postcss": "^8.5.6",
-    "tailwindcss": "3.3.2",
-    "typescript": "5.2.2"
+    "@types/node": "^22.20.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "dependency-cruiser": "^18.4.0",
+    "sass": "^1.105.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
   }
 }
